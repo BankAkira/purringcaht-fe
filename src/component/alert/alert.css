@@ -1,0 +1,51 @@
+.alert-title {
+  font-weight: 600;
+  color: #4b99f1;
+}
+
+.alert-description,
+.alert-sub-description {
+  color: #6b7280;
+}
+
+.btn-outline {
+  border: 1px solid #f87171;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #f87171;
+  color: white;
+}
+
+.custom-dispute {
+  position: absolute;
+  background-color: white;
+  top: 4rem;
+  margin: 1.25rem 0.938rem 0 0.938rem;
+  border: 1px solid #d1d5db;
+  z-index: 5;
+  width: -webkit-fill-available; /* WebKit specific */
+}
+
+.custom-dispute > .items-center {
+  display: unset;
+}
+
+@media (max-width: 1360px) {
+  .con-alert {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .con-alert .btn-alert {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 8px;
+  }
+}

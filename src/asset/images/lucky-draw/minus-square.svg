@@ -1,0 +1,13 @@
+<svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="vuesax/bold/minus-square">
+<g id="minus-square">
+<path id="Vector" d="M40.975 5H20.025C10.925 5 5.5 10.425 5.5 19.525V40.45C5.5 49.575 10.925 55 20.025 55H40.95C50.05 55 55.475 49.575 55.475 40.475V19.525C55.5 10.425 50.075 5 40.975 5ZM40.5 31.875H20.5C19.475 31.875 18.625 31.025 18.625 30C18.625 28.975 19.475 28.125 20.5 28.125H40.5C41.525 28.125 42.375 28.975 42.375 30C42.375 31.025 41.525 31.875 40.5 31.875Z" fill="url(#paint0_linear_6692_17717)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_6692_17717" x1="24.7761" y1="-25.4054" x2="80.7233" y2="21.7016" gradientUnits="userSpaceOnUse">
+<stop offset="0.0444369" stop-color="#FD4077"/>
+<stop offset="1" stop-color="#FE7601"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,11 @@
+.select-custom {
+  color: #6b7280;
+}
+
+.select-custom select {
+  background-color: white !important;
+}
+
+select:not([size]) {
+  background-position: right 1rem center;
+}

@@ -1,0 +1,55 @@
+/* files-thumbnail.css */
+.file-thumbnail {
+  display: flex;
+  /* align-items: center; */
+  background-color: #f3f4f6; /* White background for the file card */
+  padding: 8px 12px;
+  border-radius: 16px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  */
+  /* Subtle shadow for depth */
+
+  transition: all 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* .file-thumbnail:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); 
+} */
+
+.file-icon {
+  /* margin-right: 12px; */
+  font-size: 1.5rem; /* Larger icon size */
+}
+
+.file-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; /* Stack name and meta information vertically */
+}
+
+.file-name {
+  font-size: 1rem;
+  font-weight: normal;
+  /* margin-bottom: 4px;  */ /* Space between name and meta information */
+}
+
+.file-meta {
+  display: flex;
+  align-items: baseline;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.file-pages {
+  margin-right: 8px;
+}
+
+.file-size,
+.file-type {
+  margin-left: 4px; /* Space after the bullet */
+}
+
+/* Additional styles for the bullet */
+.bullet {
+  margin: 0 4px;
+  color: #ccc;
+}

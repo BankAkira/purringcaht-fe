@@ -1,0 +1,30 @@
+.circle-container {
+  position: relative;
+  width: 393px; /* Adjust as needed */
+  height: 393px; /* Adjust as needed */
+}
+
+.circle {
+  position: absolute;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.circle:nth-child(1) {
+  width: 100%;
+  height: 100%;
+}
+
+.circle:nth-child(2) {
+  width: 72.5%;
+  height: 72.5%;
+  top: 13.75%;
+  left: 13.75%;
+}
+
+.circle:nth-child(3) {
+  width: 45%;
+  height: 45%;
+  top: 27.5%;
+  left: 27.5%;
+}

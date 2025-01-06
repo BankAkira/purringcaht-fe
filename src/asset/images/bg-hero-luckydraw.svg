@@ -1,0 +1,23 @@
+<svg width="1036" height="278" viewBox="0 0 1036 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2586_431596)">
+<path d="M0 8.00001C0 3.58173 3.58172 0 8 0H1028C1032.42 0 1036 3.58172 1036 8V270C1036 274.418 1032.42 278 1028 278H8.00001C3.58173 278 0 274.418 0 270V8.00001Z" fill="url(#paint0_linear_2586_431596)"/>
+<path opacity="0.6" d="M356.045 305L518.5 154L269.733 305H356.045ZM1043 305V293.089L518.5 154L940.827 305H1043ZM-6 305H96.1726L518.5 154L-6 293.089V305ZM767.267 305L518.5 154L680.955 305H767.267ZM1043 207.418L518.5 154L1043 235.552V207.418ZM1043 72.4479L518.5 154L1043 100.582V72.4479ZM1043 141.999L518.5 154L1043 166.001V141.999ZM557.327 305L518.5 154L479.673 305H557.313H557.327ZM269.733 3L518.5 154L356.045 3H269.747H269.733ZM680.955 3L518.5 154L767.267 3H680.955ZM479.673 3L518.5 154L557.327 3H479.687H479.673ZM-6 235.552L518.5 154L-6 207.418V235.552ZM1043 3H940.827L518.5 154L1043 14.9109V3ZM-6 166.001L518.5 154L-6 141.999V166.001ZM-6 100.582L518.5 154L-6 72.4479V100.582ZM-6 3V14.9109L518.5 154L96.1726 3H-6Z" fill="url(#paint1_radial_2586_431596)" fill-opacity="0.5"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2586_431596" x1="-7.7188e-06" y1="139" x2="935.845" y2="139" gradientUnits="userSpaceOnUse">
+<stop stop-color="#689CF3"/>
+<stop offset="1" stop-color="#7429E6"/>
+</linearGradient>
+<radialGradient id="paint1_radial_2586_431596" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(518.512 153.502) rotate(0.125234) scale(746.88 238.679)">
+<stop stop-color="#003B9E" stop-opacity="0"/>
+<stop offset="0.16" stop-color="#003A9B" stop-opacity="0.05"/>
+<stop offset="0.37" stop-color="#003793" stop-opacity="0.21"/>
+<stop offset="0.62" stop-color="#003287" stop-opacity="0.46"/>
+<stop offset="0.88" stop-color="#002C76" stop-opacity="0.82"/>
+<stop offset="1" stop-color="#00296E"/>
+</radialGradient>
+<clipPath id="clip0_2586_431596">
+<path d="M0 8.00001C0 3.58173 3.58172 0 8 0H1028C1032.42 0 1036 3.58172 1036 8V270C1036 274.418 1032.42 278 1028 278H8.00001C3.58173 278 0 274.418 0 270V8.00001Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

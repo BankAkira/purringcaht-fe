@@ -1,0 +1,78 @@
+.btn {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 5em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+
+.btn-default {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+
+.btn-outline {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+/* .btn--primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+.btn--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+} */
+
+.btn-primary {
+  color: white;
+}
+
+.btn-secondary {
+  color: white;
+}
+
+.btn-success {
+  color: white;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #c81e1e;
+}
+
+.btn-warning {
+  color: white;
+  background-color: #fea601;
+}
+
+.btn-default {
+  color: #6b7280;
+  background-color: transparent;
+}
+
+.btn-sm {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.btn-md {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.btn-lg {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.bg-blue-500 {
+  background-color: #3a81f5;
+}
+
+.bg-yellow-400 {
+  background-color: #eac927;
+}
+
+.bg-yellow-600 {
+  background-color: #eac927;
+}

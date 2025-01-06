@@ -1,0 +1,91 @@
+.switch {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px; /* Adjust the font size as needed */
+  font-family: Arial, sans-serif; /* Use your desired font-family */
+  cursor: pointer;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: relative;
+  width: 40px; /* Width of the slider */
+  height: 20px; /* Height of the slider */
+  background-color: #ccc; /* Slider background when off */
+  border-radius: 20px; /* Make it a round slider */
+  transition: background-color 0.2s;
+  margin-right: 10px; /* Space between the slider and the label */
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 24px; /* Height of the sliding button */
+  width: 24px; /* Width of the sliding button */
+  left: -2px; /* Adjust for precise alignment */
+  bottom: -2px; /* Adjust for precise alignment */
+  background-color: #fff; /* Background of the sliding button */
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Shadow for the button */
+  transition: 0.2s;
+}
+
+.active .slider {
+  background: #fe7601 !important;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(
+    to bottom right,
+    #fd4077,
+    #fe7601
+  ) !important; /* Horizontal gradient */
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px); /* Adjust distance to slide */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3; /* Optional: Focus state */
+}
+
+input:disabled + .slider {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* If the switch is active */
+.active .slider {
+  background-color: #4f8ef7; /* Slider background when on */
+}
+
+/* If the switch is active and disabled */
+.active.disabled .slider {
+  background-color: #888; /* Slider background when disabled */
+}
+
+/* Label styling */
+.label {
+  user-select: none;
+  color: #000; /* Label text color */
+}
+
+.slider:before {
+  height: 16px;
+  width: 16px;
+  left: 1px;
+  bottom: 3px;
+  transform: translateX(2px);
+}
+
+.slider {
+  width: 44px;
+  height: 22px;
+  min-width: 44px;
+}

@@ -1,0 +1,42 @@
+export const level = [
+  {
+    lv: 'Lv.1 - Supurrstar',
+    backgroundLine: 'linear-gradient(180deg, #FF9252 0%, #FF3F15 100%)',
+    backgroundBox: 'linear-gradient(180deg, #FF9252 0%, #FF3F15 100%)',
+    borderBox: '1.93px solid rgba(255, 255, 255, 0.30)',
+    shadowBox: '0px 7.078px 14.156px 0px rgba(255, 77, 0, 0.40)',
+    shadowLine: '0px 8.847px 17.695px 0px rgba(255, 77, 0, 0.40)',
+  },
+  {
+    lv: 'Lv.2 - Clawtastic',
+    backgroundLine: 'linear-gradient(180deg, #CF65F4 0%, #952CB9 100%)',
+    backgroundBox: 'linear-gradient(180deg, #CF65F4 0%, #952CB9 100%)',
+    borderBox: '1.93px solid rgba(255, 255, 255, 0.30)',
+    shadowBox: '0px 7.078px 14.156px 0px rgba(149, 44, 185, 0.40)',
+    shadowLine: '0px 8.847px 17.695px 0px rgba(149, 44, 185, 0.40)',
+  },
+  {
+    lv: 'Lv.3 - Meowgical',
+    backgroundLine: 'linear-gradient(180deg, #44BBFE 0%, #1E78FE 100%)',
+    backgroundBox: 'linear-gradient(180deg, #44BBFE 0%, #1E78FE 100%)',
+    borderBox: '1.93px solid rgba(255, 255, 255, 0.30)',
+    shadowBox: '0px 7.078px 14.156px 0px rgba(32, 124, 254, 0.40)',
+    shadowLine: '0px 8.847px 17.695px 0px rgba(32, 124, 254, 0.40)',
+  },
+  {
+    lv: 'Lv.4 - Whisker Wonder',
+    backgroundLine: 'linear-gradient(180deg, #90DF75 0%, #62B655 100%)',
+    backgroundBox: 'linear-gradient(180deg, #90DF75 0%, #62B655 100%)',
+    borderBox: '1.93px solid rgba(255, 255, 255, 0.30)',
+    shadowBox: '0px 7.078px 14.156px 0px rgba(98, 182, 85, 0.40)',
+    shadowLine: '0px 8.847px 17.695px 0px rgba(98, 182, 85, 0.40)',
+  },
+  {
+    lv: 'Lv.5 - Pawsome',
+    backgroundLine: 'linear-gradient(180deg, #747474 0%, #1F1F1F 100%)',
+    backgroundBox: 'linear-gradient(180deg, #747474 0%, #1F1F1F 100%)',
+    borderBox: '1.93px solid rgba(255, 255, 255, 0.30)',
+    shadowBox: '0px 7.078px 14.156px 0px rgba(31, 31, 31, 0.40)',
+    shadowLine: '0px 8.847px 17.695px 0px rgba(31, 31, 31, 0.40)',
+  },
+];

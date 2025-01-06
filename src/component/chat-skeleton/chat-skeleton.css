@@ -1,0 +1,74 @@
+/* chat-skeleton.css */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.chat-skeleton {
+  display: flex;
+  align-items: center;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+.chat-skeleton.group {
+  position: relative;
+}
+
+.chat-skeleton.group .avatar-skeleton {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  animation: shimmer 2s infinite;
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 50%,
+    #f6f7f8 100%
+  );
+  position: relative;
+  width: 40px;
+  z-index: 2; /* Higher z-index so that this avatar appears on top */
+}
+
+.chat-skeleton.group .avatar-skeleton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px; /* Overlapping amount - adjust as needed */
+  min-width: 40px;
+  height: 40px;
+  background-color: #d0d0d0; /* Slightly darker to appear underneath */
+  border-radius: 50%;
+  z-index: 1; /* Lower z-index so this appears beneath the primary avatar */
+}
+
+.chat-skeleton .text-skeleton {
+  flex-grow: 1;
+  margin-left: 16px; /* Give some space between avatars and text */
+}
+
+.chat-skeleton .line-skeleton {
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+
+.chat-skeleton .line-skeleton.short {
+  width: 50%; /* Short line width, adjust as needed */
+  align-self: flex-end;
+}
+.chat-skeleton.direct .avatar-skeleton {
+  min-width: 40px; /* Set the width of the avatar */
+  height: 40px; /* Set the height of the avatar */
+  border-radius: 50%;
+  background-color: #e0e0e0; /* Light grey color for avatar skeleton */
+}

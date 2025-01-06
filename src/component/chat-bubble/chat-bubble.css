@@ -1,0 +1,147 @@
+/* Styles for chat bubbles */
+.chat-bubble-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Align items to the start for the receiver */
+}
+
+/* Flex container for name and timestamp */
+.name-timestamp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* Make sure it spans the full width of the container */
+}
+
+/* Name and timestamp styles */
+.chat-name,
+.chat-timestamp {
+  margin: 0;
+  padding: 0;
+  /* If you have any specific styles such as font size or color, include them here */
+}
+
+/* Chat bubble styles */
+.chat-bubble {
+  background: #e4e6eb;
+  margin-top: 4px;
+  padding: 16px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  /* ... (rest of your styles) */
+}
+
+/* Solid background for receiver (assuming you want a similar gradient) */
+.receiver {
+  background: linear-gradient(135deg, #fe7fa4 0%, #fea355 100%);
+  color: white;
+  margin-left: auto;
+  border-top-left-radius: 0;
+}
+
+/* Gradient background for sender */
+.sender {
+  border-top-right-radius: 0;
+  background: #fff;
+  /* Replace with gradient if desired */
+  color: black;
+  margin-right: auto;
+}
+
+/* Timestamp style */
+.chat-timestamp {
+  position: absolute;
+  /* Positioning the timestamp */
+  bottom: -20px;
+  /* Adjust as needed */
+  right: 10px;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.file-message {
+  display: flex;
+  align-items: center;
+  /* Aligns children (icon, details, download button) vertically center */
+  background: #f3f4f6;
+  padding: 8px;
+  border-radius: 8px;
+  gap: 16px;
+  position: relative;
+  /* For absolute positioning of children if necessary */
+  /* margin: 10px 0; */
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.file-info {
+  display: flex;
+  /* This will line up the children in a row */
+  justify-content: space-between;
+  width: 100%;
+  /* Take up the full width to spread out the items */
+  margin-right: 8px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* .file-icon, */
+/* .file-download-icon { */
+/* Styling for the icons */
+/* margin: 0 8px; */
+/* Adjust spacing around icons */
+/* } */
+
+.file-details {
+  flex-grow: 1;
+  /* Allows the details to fill the space between icons */
+  text-align: center;
+  /* Centers the text within the details area */
+}
+
+.file-page,
+.file-size,
+.file-type {
+  margin-right: 8px;
+  /* Space between metadata elements */
+}
+
+/* If IconButton is a styled component, it might not need additional CSS. */
+/* However, if you want to absolutely center the download icon, you could add: */
+.file-download-icon {
+  margin: auto;
+  /* Pushes the download icon to the far right */
+}
+
+.file-name {
+  margin-right: auto;
+  /* This pushes everything to the right of this element to the edge */
+  font-weight: bold;
+}
+
+.file-metadata {
+  display: flex;
+  align-items: center;
+  /* Aligns children vertically in the center */
+  /* No need for width: 100% if you're not justifying content space between anymore */
+}
+
+.file-size,
+.file-type {
+  /* Style for size and type; if you want them smaller or a lighter color, specify here */
+  font-size: 0.8em;
+  color: #333;
+}
+
+.sender .chat-bubble {
+  /* Your existing styles for the sender's chat bubble, for example: */
+  background: linear-gradient(135deg, #fe7fa4 0%, #fea355 100%);
+}
+
+.sender .chat-bubble .file-message,
+.sender .chat-bubble .file-name,
+.sender .chat-bubble .file-metadata {
+  color: #000;
+  /* Set the color to black (or any other color you prefer) */
+}

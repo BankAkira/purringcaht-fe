@@ -1,0 +1,15 @@
+.custom-datepicker input {
+  background-color: white;
+}
+
+.custom-datepicker button {
+  border-radius: 16px;
+}
+
+.custom-datepicker .bg-cyan-700 {
+  background: linear-gradient(130deg, #fd4077 -2.26%, #fe7601 96.97%);
+}
+
+.custom-datepicker .bg-cyan-700:hover {
+  background: rgba(208, 56, 1);
+}

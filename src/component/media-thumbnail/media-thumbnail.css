@@ -1,0 +1,65 @@
+/* media-thumbnail.css */
+.media-thumbnail-container {
+  display: flex;
+  align-items: stretch;
+  width: 100%; /* Full width to match the parent container */
+  max-width: 1018px; /* Max width as per the provided design */
+  height: 276px; /* Height as per the design */
+  /* border-radius: 12px;  */
+  overflow: hidden; /* Ensure the content respects border-radius */
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); Shadow effect */
+  gap: 10px;
+}
+
+.thumbnail-image {
+  object-fit: cover; /* Ensure images cover their area */
+  /* width: calc(
+    50% - 60px
+  );  */
+  /* Width calculation to leave space for the overflow indicator */
+  height: 100%; /* Images will stretch to the height of the container */
+  border-radius: 10px;
+}
+
+.overflow-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%;  */
+  /* Width of the overflow indicator as per the design */
+  background-color: #f3f4f6; /* Light gray background */
+  color: #333; /* Text color */
+  font-size: 14px; /* Font size of the '+99' indicator */
+  font-weight: bold; /* Make the text bold */
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .media-thumbnail-container {
+    max-width: 100%; /* Allow container to fill the width on smaller screens */
+  }
+  .thumbnail-image {
+    width: calc(50% - 50px); /* Adjust width calculation for smaller screens */
+  }
+  .overflow-indicator {
+    width: 100px; /* Adjust width for the overflow indicator on smaller screens */
+  }
+}
+
+/* Size-specific styles */
+.media-thumbnail-container.small {
+  height: 80px; /* Example height for small size */
+  width: 100%;
+  /* Adjust the width for small size if needed */
+}
+
+.media-thumbnail-container.medium {
+  height: 200px; /* Example height for medium size */
+  max-width: 750px; /* Adjust the width for medium size if needed */
+}
+
+.media-thumbnail-container.large {
+  height: 250px; /* Example height for large size */
+  max-width: 1018px; /* Full width for large size */
+}

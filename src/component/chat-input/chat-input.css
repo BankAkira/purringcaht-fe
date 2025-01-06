@@ -1,0 +1,16 @@
+.rdw-editor-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* .rdw-editor-toolbar {
+  display: flex;
+}
+
+.rdw-inline-wrapper {
+  display: flex;
+}
+
+.rdw-emoji-wrapper {
+  display: flex;
+} */
