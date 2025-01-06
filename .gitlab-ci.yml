@@ -1,0 +1,41 @@
+# Use the Node.js image with the specified version.
+image: nolifelover/firebase-tools:latest-node-18
+
+# Cache the node_modules directory to speed up the build process.
+cache:
+  paths:
+    - node_modules/
+
+# Define all stages
+stages:
+  - deploy
+  - notification
+
+# Build the Angular project for production and deploy it to Firebase hosting.
+deploy-dev:
+  stage: deploy
+  only:
+    - deploy-dev
+
+  script:
+    - npm i
+    - npm run build:trydev
+    # - yarn sentry:sourcemaps
+    # - firebase use --token $FIREBASE_TOKEN
+    - firebase use socialbureau-website
+    - firebase deploy --only hosting:trydev --token $FIREBASE_TOKEN
+
+deploy-prod:
+  stage: deploy
+  only:
+    - deploy-prod
+    - master
+
+  script:
+    - yarn
+    # - ng build --prod --output-path dist/$ANGULAR_PROJECT_NAME
+    - yarn build:prod
+    # - yarn sentry:sourcemaps
+    # - firebase use --token $FIREBASE_TOKEN
+    - firebase use socialbureau-website
+    - firebase deploy --only hosting:prod --token $FIREBASE_TOKEN

@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "socialbureau-website"
+  },
+  "targets": {
+    "socialbureau-website": {
+      "hosting": {
+        "prod": [
+          "catchachat-prod"
+        ],
+        "trydev": [
+          "catchachat-trydev"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

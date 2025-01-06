@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title translate="no">Purring Chat</title>
+    <link rel="icon" href="/favicon.svg" />
+    <base href="/" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Purring Chat" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <link
+      rel="apple-touch-icon"
+      href="/apple-touch-icon-180x180.png"
+      sizes="180x180" />
+    <link
+      rel="mask-icon"
+      sizes="any"
+      href="/purring-chat.svg"
+      color="#FFFFFF" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="author" content="Purring Chat" />
+    <meta name="keywords" content="Purring Chat" />
+    <meta name="description" content="Purring Chat" />
+    <link rel="canonical" href="https://app.purringchat.io/" />
+
+    <!--slick-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="UTF-8"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <!--slick-->
+  </head>
+  <body class="bg-gray-200 dark:bg-gray-900 antialiased !top-0">
+    <div id="root"></div>
+    <script>
+      window.global = window;
+    </script>
+    <script type="module">
+      import process from 'process';
+      import { Buffer } from 'buffer';
+      import EventEmitter from 'events';
+
+      window.Buffer = Buffer;
+      window.process = process;
+      window.EventEmitter = EventEmitter;
+    </script>
+    <script type="module" src="src/main.tsx"></script>
+  </body>
+</html>
